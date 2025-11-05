@@ -121,10 +121,12 @@ app.route("/api", api);
   }
 })();
 
+const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 1337;
+
 serve(
   {
     fetch: app.fetch,
-    port: 1337,
+    port: port,
   },
   () => {
     console.log(
