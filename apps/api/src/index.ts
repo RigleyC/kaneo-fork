@@ -106,7 +106,7 @@ const searchRoute = api.route("/search", search);
 // Mount API routes under /api
 app.route("/api", api);
 
-(async () => {
+/* (async () => {
   try {
     await migrateWorkspaceUserEmail();
 
@@ -119,7 +119,7 @@ app.route("/api", api);
     console.error("❌ Database migration failed!", error);
     process.exit(1);
   }
-})();
+})(); */
 
 const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 1337;
 
